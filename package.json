@@ -1,6 +1,17 @@
 {
   "name": "utring-nft",
   "version": "1.0.0",
+  "scripts": {
+    "install": "yarn build-all",
+    "next": "yarn build-firebase && cd \"src/app\" && yarn && yarn dev",
+    "preserve": "yarn build-all",
+    "serve": "firebase serve",
+    "predeploy": "yarn build-all",
+    "deploy": "firebase deploy",
+    "build-all": "yarn build-next && yarn build-firebase",
+    "build-next": "cd \"src/app\" && yarn && yarn build",
+    "build-firebase": "cd \"src/functions\" && yarn"
+  },
   "main": "index.js",
   "repository": "https://github.com/esperanzaorozcoceron/utring-nft.git",
   "license": "MIT"
