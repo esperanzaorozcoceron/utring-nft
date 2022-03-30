@@ -9,3 +9,7 @@ npm install --global yarn
 
 # setup Next.js
 yarn add next react react-dom
+
+# Run local Project
+
+yarn next 
